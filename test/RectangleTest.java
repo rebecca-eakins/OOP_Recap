@@ -19,13 +19,14 @@ public class RectangleTest {
     }
 
     @Test
-    public void shouldNotCalculateAreaWhen() {
-
-    }
-
-    @Test
     public void shouldCalculateAreaWhenLengthIsValid() throws Exception {
         Rectangle rectangle = new Rectangle(6,4);
         assertEquals(24,rectangle.calculateArea());
+    }
+
+    @Test
+    public void shouldCalculatePerimeterTenWhenLengthIsTwoAndWidthIsThree() {
+        Rectangle rectangle = new Rectangle(2, 3);
+        assertEquals(10, rectangle.calculatePerimeter());
     }
 }
