@@ -15,5 +15,13 @@ public class CircleTest {
         assertEquals(Math.PI, circle.calculateArea(),0);
     }
 
+    @Test
+    public void shouldCalculatePerimeterAsTwoPIWhenRadiusIsOne() throws CircleException {
+        Circle circle = new Circle(1);
+        double result = 2* Math.PI;
+        assertEquals(result, circle.calculatePerimeter(),0);
+
+    }
+
 
 }
