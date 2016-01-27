@@ -12,6 +12,10 @@ public class Rectangle {
         return length * width;
     }
 
+    public int calculatePerimeter() {
+        return 2 * (length + width);
+    }
+
     public void checkAttributes() throws RectangleException {
         if(length==0)
             throw new RectangleException("Length must be greater than zero.");
