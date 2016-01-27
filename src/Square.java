@@ -2,7 +2,10 @@ public class Square {
 
     private final int side;
 
-    public Square(int side) {
+    public Square(int side) throws SquareException {
+        if(side<=0) {
+            throw new SquareException("Side should be greater than 0");
+        }
         this.side = side;
     }
 
