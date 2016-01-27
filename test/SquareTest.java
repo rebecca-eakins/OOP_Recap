@@ -14,4 +14,11 @@ public class SquareTest {
         Square square = new Square(1);
         assertEquals(1, square.calculateArea());
     }
+
+    @Test
+    public void shouldCalculatePerimeterFourForGivenSideValueOne() throws Exception, SquareException {
+        Square square = new Square(1);
+        assertEquals(4,square.calculatePerimeter());
+
+    }
 }
